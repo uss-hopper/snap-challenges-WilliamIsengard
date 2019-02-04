@@ -4,6 +4,14 @@ var startingString = "Fate protects fools, little children and ships named Enter
 
 var splits = startingString.split(" ");
 
+var filtered = splits.filter(word => {
+  return word[0].toLowerCase() !== "f";
+});
+
+console.log(filtered);
+
+// Alternate Way To Write Function
+
 var filtered = splits.filter(function(word) {
   return word[0].toLowerCase() !== "f";
 });
