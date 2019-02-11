@@ -4,18 +4,19 @@ const array = [{"userId":1,"id":1,"title":"sunt aut facere repellat provident oc
 
 const title = array.map(index => `${index.title}`);
 
-let title[0] = Document.getElementById("cardTitle1");
+const title[0] = Document.getElementById("cardTitle1");
+div.innerHTML = title[0];
 
-Document.createElement()
-
-
-
-const body = array.map(index => `${index.body}`);
-
-console.log(body);
-
-
-
-let newArray = Document.getElementById("card");
-
-Document.createElement()
+// Document.createElement(cardTitle1);
+//
+//
+//
+// const body = array.map(index => `${index.body}`);
+//
+// console.log(body);
+//
+//
+//
+// let newArray = Document.getElementById("card");
+//
+// Document.createElement()
