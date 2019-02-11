@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Javascript File -->
-  <script src="javascript.js"></script>
+  <script src="./javascript.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -22,10 +22,14 @@
 </head>
 
 <body>
+  <button type="button" onClick="loadPosts()" class="btn btn-primary">Click Me</button>
 
   <div class="container">
+    <div id="target" class="card-deck"></div>
+  </div>
 
-    <!-- Creates Cards -->
+<!-------------- Original Attempt...
+
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title" id="cardTitle1"></h5>
@@ -60,6 +64,7 @@
         <p class="card-text" id="cardBody5"></p>
       </div>
     </div>
+-->
 
   </div>
 
