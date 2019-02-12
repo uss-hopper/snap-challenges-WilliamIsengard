@@ -24,11 +24,17 @@
 <body>
 
   <!-- Button to initiate loading javascript -->
-  <button type="button" onClick="loadPosts()" class="btn btn-outline-primary btn-block active" aria-pressed="true">Engage</button>
+  <div class="container">
+    <div class="row m-5">
+      <button type="button" onClick="loadPosts()" class="btn btn-outline-primary btn-block active" aria-pressed="true">Engage</button>
+    </div>
+  </div>
 
   <!-- container for Bootstrap card-deck -->
   <div class="container">
-    <div id="target" class="card-deck"></div>
+    <div class="row">
+      <div id="target" class="card-deck"></div>
+    </div>
   </div>
 
 </body>
