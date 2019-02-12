@@ -30,7 +30,7 @@ const posts = [{
 }];
 
 function loadPosts() {
-  let renderedPost = posts.map((index) => {
+  let renderedPosts = posts.map((index) => {
     return `
     <div class="card">
   <h5 class="card-header">Classic Literature</h5>
