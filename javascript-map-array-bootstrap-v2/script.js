@@ -29,6 +29,8 @@ const posts = [{
   "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
 }];
 
+// Solution via map //
+
 function loadPosts() {
   let renderedPosts = posts.map((index) => {
     return `
@@ -42,5 +44,11 @@ function loadPosts() {
     `
   });
   let target = document.getElementById('target');
-  target.innerHTML = renderedPosts.toString();
+  target.innerHTML = renderedPosts.join("\r\n");
 }
+
+// Solution via reduce //
+// var rederedPosts = posts.reduce(function(prevVal,currVal,idx){
+//     return idx == 3 ? currVal.title : prevVal + ', ' + currVal.title;
+// }, '')
+// console.log(rederedPosts);
