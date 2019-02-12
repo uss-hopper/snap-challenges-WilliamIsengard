@@ -48,7 +48,20 @@ function loadPosts() {
 }
 
 // Solution via reduce //
-// var rederedPosts = posts.reduce(function(prevVal,currVal,idx){
-//     return idx == 3 ? currVal.title : prevVal + ', ' + currVal.title;
-// }, '')
-// console.log(rederedPosts);
+window.onload = () => {
+  const cards = postArray.reduce(
+    function(accumulator, currentValue) {
+      return accumulator +
+        `<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">${currentValue.title}</h5>
+						<p class="card-text">${currentValue.body}</p>
+					</div>
+				</div>`;
+    },
+    []
+  );
+  let target = document.getElementById("target");
+  target.innerHTML = cards;
+  //console.log(cards);
+};
