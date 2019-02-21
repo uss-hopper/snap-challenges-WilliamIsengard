@@ -9,3 +9,8 @@ sum;
 const numbers = [1,2,3,5,8,13,21,34];
 const multiply = numbers.reduce((total, amount) => total * amount);
 multiply;
+
+const array = [];
+const newArray = array.reduce((accumulator, current) => {
+	console.log()
+})
